@@ -10,12 +10,12 @@
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello to Project 2!"
+        android:text="@string/helloToProject2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="45sp"
+        android:textSize="35sp"
         />
 
     <Button
@@ -27,8 +27,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="125dp"
-        android:text="Change Screen"
-        android:onClick=""
+        android:text="@string/changeScreen"
+        android:onClick="switchScreens"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

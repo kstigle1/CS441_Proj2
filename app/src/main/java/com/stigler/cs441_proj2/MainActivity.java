@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity
 
     public void switchScreens (View view)
     {
-        //Intent actAction = new Intent(this,);
+        Intent actAction = new Intent(this, SecondActivity.class);
+        startActivity(actAction);
     }
 }
