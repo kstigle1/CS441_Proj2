@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity
 {
 
     Button backButton;
+    TextView typedText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -19,6 +21,12 @@ public class SecondActivity extends AppCompatActivity
         setContentView(R.layout.activity_second);
 
         backButton = (Button) findViewById(R.id.backButton);
+        typedText = (TextView) findViewById(R.id.typedText);
+
+        Intent actActionMain = getIntent();
+        String movedText = actActionMain.getStringExtra("theText");
+
+        typedText.setText("Hello " + movedText + "!");
     }
 
     public void goBack(View view)
