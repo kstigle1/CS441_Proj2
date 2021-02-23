@@ -3,4 +3,5 @@
     <string name="helloToProject2">Welcome to Project 2!</string>
     <string name = "changeScreen">Change Screen</string>
     <string name = "OMG2Screen">OMG it\&apos;s the second screen!</string>
+    <string name="backToFirst">Back to First Screen</string>
 </resources>
