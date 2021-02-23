@@ -44,4 +44,56 @@
         android:textSize="45sp"
         />
 
+    <ImageView
+        android:id="@+id/NHL"
+        android:layout_width="200dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonhl"
+        android:layout_marginBottom="375dp"
+        android:alpha="0.0"
+        />
+
+    <ImageView
+        android:id="@+id/NFL"
+        android:layout_width="200dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonfl"
+        android:layout_marginBottom="375dp"
+        android:alpha="0.0"
+        />
+
+    <ImageView
+        android:id="@+id/MLB"
+        android:layout_width="275dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomlb"
+        android:layout_marginBottom="375dp"
+        android:alpha="0.0"
+        />
+
+    <ImageView
+        android:id="@+id/NBA"
+        android:layout_width="200dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonba"
+        android:layout_marginBottom="375dp"
+        android:alpha="0.0"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

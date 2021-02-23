@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">CS441_Proj2</string>
     <string name="helloToProject2">Welcome to Project 2!</string>
-    <string name = "changeScreen">Change Screen</string>
+    <string name = "changeScreen">Submit Choices</string>
     <string name = "OMG2Screen">OMG it\&apos;s the second screen!</string>
     <string name="backToFirst">Back to First Screen</string>
     <string name="inputBox">What is your name?</string>
     <string name="space"> </string>
+    <string name="radioCap">What is your favorite Big 4 League?</string>
+    <string name="clearRadio">Clear Selection</string>
 </resources>

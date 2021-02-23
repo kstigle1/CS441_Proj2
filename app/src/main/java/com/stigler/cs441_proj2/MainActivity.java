@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
@@ -14,6 +16,7 @@ public class MainActivity extends AppCompatActivity
     TextView welcomeText;
     Button screenButton;
     EditText inputText;
+    RadioGroup radios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -23,6 +26,17 @@ public class MainActivity extends AppCompatActivity
 
         screenButton = (Button) findViewById(R.id.screenButton);
         inputText = (EditText) findViewById(R.id.inputText);
+        radios = (RadioGroup) findViewById(R.id.leaugeButtons);
+        radios.clearCheck();
+
+        radios.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId)
+            {
+                RadioButton pickedRadio = (RadioButton) group.findViewById(checkedId);
+            }
+        });
     }
 
     public void switchScreens (View view)
@@ -30,6 +44,23 @@ public class MainActivity extends AppCompatActivity
         String movingText = inputText.getText().toString();
         Intent actAction = new Intent(this, SecondActivity.class);
         actAction.putExtra("theText", movingText);
+
+        int selectedRadio = radios.getCheckedRadioButtonId();
+        if (selectedRadio != -1)
+        {
+            RadioButton radioLeague = (RadioButton) radios.findViewById(selectedRadio);
+            actAction.putExtra("league", radioLeague.getText());
+        }
+        else
+        {
+            actAction.putExtra("league", "");
+        }
+
         startActivity(actAction);
+    }
+
+    public void clearRadios (View view)
+    {
+        radios.clearCheck();
     }
 }
