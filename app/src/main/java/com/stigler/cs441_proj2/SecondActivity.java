@@ -15,7 +15,7 @@ public class SecondActivity extends AppCompatActivity
 
     Button backButton;
     TextView typedText;
-    ImageView logoNHL, logoNFL, logoMLB, logoNBA;
+    ImageView logoNHL, logoNFL, logoMLB, logoNBA, logoMLS, logoF1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -29,6 +29,8 @@ public class SecondActivity extends AppCompatActivity
         logoNFL = (ImageView) findViewById(R.id.NFL);
         logoMLB = (ImageView) findViewById(R.id.MLB);
         logoNBA = (ImageView) findViewById(R.id.NBA);
+        logoMLS = (ImageView) findViewById(R.id.MLS);
+        logoF1 = (ImageView) findViewById(R.id.F1);
         Singleton singleton = Singleton.getInstance();
         Intent actActionMain = getIntent();
 
@@ -43,6 +45,10 @@ public class SecondActivity extends AppCompatActivity
             case "MLB": logoMLB.setAlpha((float) 1.0);
             break;
             case "NBA": logoNBA.setAlpha((float) 1.0);
+            break;
+            case "MLS": logoMLS.setAlpha((float) 1.0);
+            break;
+            case "Formula 1": logoF1.setAlpha((float) 1.0);
             break;
             case "": ;
             break;

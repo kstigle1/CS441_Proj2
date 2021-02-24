@@ -6,6 +6,6 @@
     <string name="backToFirst">Back to First Screen</string>
     <string name="inputBox">What is your name?</string>
     <string name="space"> </string>
-    <string name="radioCap">What is your favorite Big 4 League?</string>
+    <string name="radioCap">What is your favorite Sports League?</string>
     <string name="clearRadio">Clear Selection</string>
 </resources>
