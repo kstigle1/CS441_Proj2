@@ -8,4 +8,10 @@
     <string name="space"> </string>
     <string name="radioCap">What is your favorite Sports League?</string>
     <string name="clearRadio">Clear Selection</string>
+    <string name="nhl">NHL</string>
+    <string name="formula1">Formula 1</string>
+    <string name="nfl">NFL</string>
+    <string name="mlb">MLB</string>
+    <string name="nba">NBA</string>
+    <string name="mls">MLS</string>
 </resources>

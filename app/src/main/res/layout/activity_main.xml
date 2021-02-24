@@ -65,48 +65,48 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioNHL"
-            android:text="NHL"
-            android:textSize="30dp"
+            android:text="@string/nhl"
+            android:textSize="30sp"
             />
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioF1"
-            android:text="Formula 1"
-            android:textSize="30dp"
+            android:text="@string/formula1"
+            android:textSize="30sp"
             />
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioNFL"
-            android:text="NFL"
-            android:textSize="30dp"
+            android:text="@string/nfl"
+            android:textSize="30sp"
             />
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioMLB"
-            android:text="MLB"
-            android:textSize="30dp"
+            android:text="@string/mlb"
+            android:textSize="30sp"
             />
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioNBA"
-            android:text="NBA"
-            android:textSize="30dp"
+            android:text="@string/nba"
+            android:textSize="30sp"
             />
 
         <RadioButton
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioMLS"
-            android:text="MLS"
-            android:textSize="30dp"
+            android:text="@string/mls"
+            android:textSize="30sp"
             />
 
     </RadioGroup>
