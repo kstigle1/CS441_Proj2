@@ -43,17 +43,18 @@ public class MainActivity extends AppCompatActivity
     {
         String movingText = inputText.getText().toString();
         Intent actAction = new Intent(this, SecondActivity.class);
-        actAction.putExtra("theText", movingText);
+        Singleton singleton = Singleton.getInstance();
+        singleton.name = movingText;
 
         int selectedRadio = radios.getCheckedRadioButtonId();
         if (selectedRadio != -1)
         {
             RadioButton radioLeague = (RadioButton) radios.findViewById(selectedRadio);
-            actAction.putExtra("league", radioLeague.getText());
+            singleton.league = (String) radioLeague.getText();
         }
         else
         {
-            actAction.putExtra("league", "");
+            singleton.league = "";
         }
 
         startActivity(actAction);

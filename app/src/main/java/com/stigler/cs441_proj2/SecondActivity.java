@@ -29,14 +29,12 @@ public class SecondActivity extends AppCompatActivity
         logoNFL = (ImageView) findViewById(R.id.NFL);
         logoMLB = (ImageView) findViewById(R.id.MLB);
         logoNBA = (ImageView) findViewById(R.id.NBA);
-
+        Singleton singleton = Singleton.getInstance();
         Intent actActionMain = getIntent();
-        String movedText = actActionMain.getStringExtra("theText");
-        String pickedLeague = actActionMain.getStringExtra("league");
 
-        typedText.setText("Hello " + movedText + "!");
+        typedText.setText("Hello " + singleton.name + "!");
 
-        switch (pickedLeague)
+        switch (singleton.league)
         {
             case "NHL": logoNHL.setAlpha((float) 1.0);
             break;
