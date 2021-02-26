@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity
     Button screenButton;
     EditText inputText;
     RadioGroup radios;
+    Singleton singleton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         inputText = (EditText) findViewById(R.id.inputText);
         radios = (RadioGroup) findViewById(R.id.leaugeButtons);
         radios.clearCheck();
+        singleton = Singleton.getInstance();
 
         radios.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity
     {
         String movingText = inputText.getText().toString();
         Intent actAction = new Intent(this, SecondActivity.class);
-        Singleton singleton = Singleton.getInstance();
+
         singleton.name = movingText;
 
         int selectedRadio = radios.getCheckedRadioButtonId();
